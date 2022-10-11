@@ -1,0 +1,134 @@
+*{padding: 0; margin: 0;}
+
+.nav{
+    background-color: aqua;
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.navber{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 14%;
+}
+
+.navber ul{
+    display: flex;
+}
+.navber ul li{
+    list-style: none;
+    margin: 0 0.6rem;
+}
+.navber ul li a {
+    text-decoration: none;
+    color: black;
+}
+.navber ul li a:hover{
+    color: darkgray;
+}
+@media only screen and (max-width: 600px) {
+    .navber{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+  }
+/* // Home */
+
+.showimg{
+    width: 100vW;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.showimg h1{
+    padding-top: 2rem;
+}
+.showimg h1 span{
+    color: orangered;
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.6rem;
+    column-gap: 0.6rem;
+    margin: 3rem 7% 1rem 7%;
+}
+.imgCon{
+    width: 100%;
+    height: 100%;
+}
+
+.imgCon img{
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;    
+}
+.deletebtn{
+    position: relative;
+    bottom: 30%;
+    left: 38%;
+    background: greenyellow;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    opacity: 0;    
+}
+.deletebtn:hover{
+    background: rgb(255, 47, 47);
+    box-shadow: 5px 6px 15px gray;
+}
+
+.imgCon:hover .deletebtn{
+    opacity: 1;
+    z-index: 1;
+    }
+
+  .up-main{
+    height: 90vh;
+    background-color: rgb(230 230 230);;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+.up-main h1{
+    padding-top: 6rem;
+}
+.up-main h1 span{
+    color: orangered;
+}
+.up-box{
+    margin-top: 10%;
+}
+
+.up-box form{
+    padding: 3rem;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.up-box form button{
+    background: greenyellow;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+.up-box form button:hover{
+    background: rgb(47, 255, 224);
+    box-shadow: 5px 6px 15px gray;
+}

@@ -1,0 +1,19 @@
+<%- include('layout/header'); %>
+    <section class="home">
+        <div class="showimg">
+            <h1>Show <span>Files</span></h1>
+            <div class="imgs">
+                    <% file.forEach(f=>{ %>
+                        <div class="imgCon">
+                            <img src="/img/upload/<%= f.fileName %>" alt="" srcset="">
+                            <a class="deletebtn" href="/delete/<%= f._id %>">Delete</a>
+                        </div>
+                    <% }) %>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <%- include('layout/footer'); %>

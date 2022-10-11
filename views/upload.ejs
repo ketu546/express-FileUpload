@@ -1,0 +1,19 @@
+<%- include('layout/header'); %>
+  <section class="upload">
+    <div class="up-main">
+        <h1>Upload <span>Files</span></h1>
+        <div class="up-box">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" multiple>
+                <button type="submit"><b>Upload</b></button>
+            </form>
+        </div>
+    </div>
+
+
+  </section>   
+
+
+
+
+<%- include('layout/footer'); %>   
